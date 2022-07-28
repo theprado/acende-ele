@@ -93,7 +93,7 @@ main {
 #progress {
     display: blcok;
     width: var(--progress,0%);
-    background-color: rgb(133, 177, 61);
+    background-color: rgb(63, 61, 177);
     transition: all 1s linear;
     height: 100%;
 }
