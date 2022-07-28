@@ -8,23 +8,22 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    --bg: #2b2b2b;
-    background-color: var(--bg);
+    background-color: #241b75;
     color: white;
+    margin: 0%;
 }
 
 main {
+    margin: 70px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: antiquewhite;
     width: 700px;
-    height: 600px;
+    height: 700px;
+    background-color: rgb(238, 238, 238);
+    color: rgb(243, 243, 243);
     border-radius: 20px;
+    padding: 20px;
+    align-items: center;
 }
 
 .narga-img {
@@ -38,7 +37,7 @@ main {
 
 .player {
     width: 640px;
-    background-color: var(--bg);
+    background-color: #241b75;
     display: grid;
     grid-template-columns: 48px 1fr 48px;
     grid-gap: 16px;
@@ -59,12 +58,12 @@ main {
     font-size: 24px;
     color: transparent;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgb(63, 61, 177);
+    -webkit-text-stroke-color: white;
     cursor: pointer;
 }
 
 #playbtn:hover {
-    -webkit-text-fill-color: rgb(63, 61, 177);
+    -webkit-text-fill-color: white;
 }
 
 .info {
@@ -80,7 +79,7 @@ main {
 
 .bar {
     --space: -4px;
-    background-color: #24242424;
+    background-color: #241b75;;
     overflow: hidden;
     left: var(--space);
     right: var(--space);
@@ -94,7 +93,7 @@ main {
 #progress {
     display: blcok;
     width: var(--progress,0%);
-    background-color: rgb(63, 61, 177);
+    background-color: rgb(133, 177, 61);
     transition: all 1s linear;
     height: 100%;
 }
