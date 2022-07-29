@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #241b75;
+    background-color: #2b0333;
     color: white;
     margin: 0%;
 }
@@ -37,7 +37,7 @@ main {
 
 .player {
     width: 640px;
-    background-color: #241b75;
+    background-color: #2b0333;
     display: grid;
     grid-template-columns: 48px 1fr 48px;
     grid-gap: 16px;
@@ -79,7 +79,7 @@ main {
 
 .bar {
     --space: -4px;
-    background-color: #241b75;;
+    background-color: #2b0333;
     overflow: hidden;
     left: var(--space);
     right: var(--space);
@@ -91,9 +91,62 @@ main {
 }
 
 #progress {
-    display: blcok;
+    display: block;
     width: var(--progress,0%);
-    background-color: rgb(63, 61, 177);
+    background-color: #7004af;
     transition: all 1s linear;
     height: 100%;
+}
+
+footer {
+
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    gap: 10px;
+    background-color: white;
+    color: #2b0333;
+    height: 110px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.link-footer {
+    padding-bottom: 1px;
+    color: #241b75;
+    position: relative;
+}
+
+.link-footer::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transform: translateY(3px);
+    background: rgb(61, 4, 136);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.link-footer:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+a:link, a:visited {
+	text-decoration: none
+	}
+
+a:active {
+	text-decoration: none
+	}
+
+
+.feito-por {
+    font-size: 12px;
+
+
 }
