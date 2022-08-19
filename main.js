@@ -1,6 +1,8 @@
 var player = document.getElementById("player");
 let progress = document.getElementById("progress");
 let playbtn = document.getElementById("playbtn");
+var audio = document.getElementById("player");
+  audio.volume = 0.1;
 
 var playpause = function () {
   if (player.paused) {

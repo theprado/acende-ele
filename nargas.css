@@ -8,7 +8,9 @@
 }
 
 body {
-    background-color: #2b0333;
+    background-image: url(img/barbie.png);
+    background-repeat:no-repeat;
+    background-size: cover;
     color: white;
     margin: 0%;
 }
@@ -19,11 +21,12 @@ main {
     flex-direction: column;
     width: 700px;
     height: 700px;
-    background-color: rgb(238, 238, 238);
+    background-color: rgba(235, 213, 213, 0);
     color: rgb(243, 243, 243);
     border-radius: 20px;
     padding: 20px;
     align-items: center;
+    justify-content:end;
 }
 
 .narga-img {
